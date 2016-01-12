@@ -1,0 +1,343 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/toast"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:textStyle="bold|italic"
+        android:layout_alignRight="@+id/button11"
+        android:layout_alignEnd="@+id/button11"
+        android:layout_marginBottom="120dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_toStartOf="@+id/button11"
+        android:layout_marginBottom="120dp"
+        android:layout_toLeftOf="@+id/button11">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#000000"
+            android:textColor="#111111">
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Player 1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_1_game_1"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"
+                android:password="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_1_game_2"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_1_game_3"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"/>
+
+            <TextView
+                android:id="@+id/player_1_point"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="#000011"
+                android:textSize="20sp"
+                android:paddingLeft="8dp"
+                android:background="#3db7ff"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#000000"
+            android:textColor="#111111"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Player 2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_2_game_1"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_2_game_2"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/player_2_game_3"
+                android:textSize="20sp"
+                android:paddingRight="10dp"
+                android:background="#b4b4b4"
+                />
+
+            <TextView
+                android:id="@+id/player_2_point"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:paddingLeft="8dp"
+                android:background="#3db7ff"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="resetMatch"
+        android:text="Reset Match"
+        android:id="@+id/button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Match Stats"
+        android:onClick="matchStats"
+        android:id="@+id/button14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/button13"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="acePlayer2"
+        android:text="Ace"
+        android:id="@+id/button3"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="forcedErrorPlayer2"
+        android:text="Forced Error"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unforcedErrorPlayer2"
+        android:text="Unforced Error"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="forcedErrorPlayer1"
+        android:text="Forced Error"
+        android:id="@+id/button6"
+        android:layout_above="@+id/button5"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignRight="@+id/button7"
+        android:layout_alignEnd="@+id/button7"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unforcedErrorPlayer1"
+        android:text="Unforced Error"
+        android:id="@+id/button7"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/button12"
+        android:layout_alignEnd="@+id/button12"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="winnerPlayer1"
+        android:text="Winner"
+        android:id="@+id/button10"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_above="@+id/button15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button15"
+        android:layout_alignEnd="@+id/button15"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="winnerPlayer2"
+        android:text="Winner"
+        android:id="@+id/button11"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
+        android:layout_alignTop="@+id/button10"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dFaultPlayer1"
+        android:text="Double Fault"
+        android:id="@+id/button12"
+        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_alignTop="@+id/button13"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dFaultPlayer2"
+        android:text="Double Fault"
+        android:id="@+id/button13"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_below="@+id/button7"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="acePlayer1"
+        android:text="Ace"
+        android:id="@+id/button15"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
